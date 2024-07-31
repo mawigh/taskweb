@@ -1,0 +1,13 @@
+[project]
+name = "taskweb"
+description = "Simple webinterface for TaskWarrior"
+version = "0.1"
+
+authors = [
+    {name = "Marcel-Brian Wilkowsky", email = "marcel.wilkowsky@outlook.de"},
+    {name = "Nils Winnwa"}
+]
+
+dependencies = [
+"flask"
+]

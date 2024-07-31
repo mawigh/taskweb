@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>TaskWeb - {% block title %}{% endblock %}</title>
+
+        <link href="static/css/bootstrap.min.css" rel="stylesheet"></link>
+        <link href="https://cdn.datatables.net/2.1.2/css/dataTables.dataTables.min.css"></link>
+    </head>
+
+    <body>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js" integrity="sha256-sw0iNNXmOJbQhYFuC9OF2kOlD5KQKe1y5lfBn4C9Sjg=" crossorigin="anonymous"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/2.1.2/js/dataTables.min.js"></script>
+
+    <script src="static/js/main.js"></script>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">TaskWeb</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="pending">Pending</a>
+                    <a class="nav-link href="completed"">Completed</a>
+                    <a class="nav-link" href="reports">Reports</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+        <!-- Block for child pages -->
+        <div id="content" class="d-flex justify-content-center w-75">
+        {% block content %}{% endblock %}
+        </div>
+    </body>
+
+
+    <footer>
+    </footer>
+
+</html>
